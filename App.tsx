@@ -5,26 +5,16 @@ import SpeakerCard from './components/SpeakerCard';
 import { scheduleData } from './data/scheduleData';
 import type { DaySchedule } from './types';
 
-const dayColors = [
-  '#3b82f6', // Lunes (blue-500)
-  '#8b5cf6', // Martes (violet-500)
-  '#a855f7', // Miércoles (purple-500)
-  '#d946ef', // Jueves (fuchsia-500)
-  '#ec4899', // Viernes (pink-500)
-  '#14b8a6', // Sábado (teal-500)
-]
-
 const App: React.FC = () => {
   return (
-    <div className="bg-slate-950 text-slate-200 min-h-screen">
+    <div className="bg-gradient-to-br from-gray-950 via-slate-900 to-indigo-950 text-slate-200 min-h-screen">
       <Header />
       <main className="container mx-auto px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
-          {scheduleData.map((day: DaySchedule, index) => (
+          {scheduleData.map((day: DaySchedule) => (
             <div key={day.day} className="flex flex-col gap-y-6">
               <div
-                className="text-center text-white font-bold py-3 px-4 rounded-xl shadow-lg"
-                style={{ backgroundColor: dayColors[index % dayColors.length] }}
+                className="text-center text-white font-bold py-3 px-4 rounded-xl shadow-lg bg-gradient-to-r from-cyan-500 to-blue-500"
               >
                 <h3 className="text-xl">{day.day}</h3>
                 <p className="text-lg font-normal">{day.date}</p>
@@ -35,7 +25,7 @@ const App: React.FC = () => {
                     <SpeakerCard key={speaker.name} speaker={speaker} />
                   ))
                 ) : (
-                  <div className="bg-slate-900 rounded-2xl p-4 text-center text-slate-500 h-full flex items-center justify-center">
+                  <div className="bg-slate-900/50 border-2 border-dashed border-slate-700 rounded-2xl p-4 text-center text-slate-500 h-full flex items-center justify-center">
                     <p className="italic">Sin capacitaciones programadas.</p>
                   </div>
                 )}

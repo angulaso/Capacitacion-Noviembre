@@ -1,23 +1,25 @@
 import type { DaySchedule } from '../types';
 
+const placeholderUrl = 'https://placehold.co/400x400/1e293b/475569.png?text=?';
+
 const speakerImages: { [key: string]: string } = {
-  'Gonzalo Suarez': 'https://i.imgur.com/QOfaG8j.jpeg',
-  'Felipe Paredes': 'https://i.imgur.com/KIXt6CH.jpeg',
-  'Luis Gonzales': 'https://i.imgur.com/k2m7fym.jpeg',
-  'Franz Moya': 'https://i.imgur.com/lJApkS6.jpeg',
-  'Angel Laredo': 'https://i.imgur.com/sU16Eu2.jpeg',
-  'Abad Bautista': 'https://i.imgur.com/wVbX2b0.jpeg',
-  'Hector Quintanilla': 'https://i.imgur.com/Uf74og2.jpeg',
-  'Marco Quezada': 'https://i.imgur.com/T0bSg1S.jpeg',
-  'Daniel Díaz': 'https://i.imgur.com/pB12J43.jpeg',
-  'Jimmy Vasquez': 'https://i.imgur.com/dKXIa5P.jpeg',
-  'Moroni Franco': 'https://i.imgur.com/2P6j1gN.jpeg',
-  'Alberto G. Lorenzo': 'https://i.imgur.com/tH40KEA.jpeg',
-  'Armando Miranda': 'https://i.imgur.com/PVEtL1H.jpeg',
-  'Juan Carlos Mendoza': 'https://i.imgur.com/xT7TQT5.jpeg',
-  'Edgar Luis García': 'https://i.imgur.com/N4qGf4V.jpeg',
-  'Norberto Cuadros': 'https://i.imgur.com/k2A4aYx.jpeg',
-  'Ricardo Olortegui': 'https://i.imgur.com/fQ8r1gG.jpeg',
+  'Gonzalo Suarez': placeholderUrl,
+  'Felipe Paredes': placeholderUrl,
+  'Luis Gonzales': placeholderUrl,
+  'Franz Moya': placeholderUrl,
+  'Angel Laredo': placeholderUrl,
+  'Abad Bautista': placeholderUrl,
+  'Hector Quintanilla': placeholderUrl,
+  'Marco Quezada': placeholderUrl,
+  'Daniel Díaz': placeholderUrl,
+  'Jimmy Vasquez': placeholderUrl,
+  'Moroni Franco': placeholderUrl,
+  'Alberto G. Lorenzo': placeholderUrl,
+  'Armando Miranda': placeholderUrl,
+  'Juan Carlos Mendoza': placeholderUrl,
+  'Edgar Luis García': placeholderUrl,
+  'Norberto Cuadros': placeholderUrl,
+  'Ricardo Olortegui': placeholderUrl,
 };
 
 
